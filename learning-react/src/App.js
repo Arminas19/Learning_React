@@ -1,24 +1,27 @@
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
-  return (
-    <div className='App'>
-      <h2> Company Job </h2>
-      <hr></hr>
-      <Job salary={90000} position="Senior Dev" company="apple" />
-      <Job salary={12000} position="mid-level Dev" company="microsoft" />
-      <Job salary={10000} position="Junior Dev" company="starbucks" />
-    </div>
-  );
-}
+    const planets = [
+        { name: "Mars", isGasPlanet: false },
+        { name: "Earth", isGasPlanet: false },
+        { name: "Jupiter", isGasPlanet: true },
+        { name: "Venus", isGasPlanet: false },
+        { name: "Neptune", isGasPlanet: true },
+        { name: "Uranus", isGasPlanet: true },
+    ]
 
-const Job = (props) => {
-  return (
-    <div>
-      <h3> {props.position} - {props.salary} - {props.company} </h3>
-      <hr style={{ maxWidth: '300px' }} />
-    </div>
-  )
+    return (
+        <div className='App'>
+            {planets.map((planet, key) => {
+                return (
+                    <div>
+                        <h1 key={key}>{planet.isGasPlanet && planet.name} </h1>
+                    </div>
+                );
+            })}
+        </div>
+    );
 }
 
 export default App;
