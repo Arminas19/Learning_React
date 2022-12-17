@@ -1,8 +1,8 @@
 import React from 'react'
-import './App.css'
+import '../App.css'
 import { CondComp } from './ConductorComponent';
 
-function App() {
+function Conductor() {
     const planets = [
         { name: "Mars", isGasPlanet: false },
         { name: "Earth", isGasPlanet: false },
@@ -17,9 +17,9 @@ function App() {
             {planets.map((planet, key) => {
                 return (
                     <div>
-                        <h1 key={key}>{planet.isGasPlanet && planet.name} </h1>
-                        <hr/>
-                        <CondComp name={planet.name} isGasPlanet={planet.isGasPlanet}/>
+                        {/* <h1 key={key}>{planet.isGasPlanet && planet.name} </h1>
+                        <hr/> */}
+                        <CondComp name={planet.name} isGasPlanet={planet.isGasPlanet} key={key}/>
                     </div>
 
                 );
@@ -28,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default Conductor;
