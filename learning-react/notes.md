@@ -1,3 +1,3 @@
 1. video - https://www.youtube.com/watch?v=f55qeKGgB_M
 
-time: 1:04:33
+time: 1:30:43
