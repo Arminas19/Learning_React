@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import { CondComp } from './ConductorComponent';
 
 function App() {
     const planets = [
@@ -17,7 +18,10 @@ function App() {
                 return (
                     <div>
                         <h1 key={key}>{planet.isGasPlanet && planet.name} </h1>
+                        <hr/>
+                        <CondComp name={planet.name} isGasPlanet={planet.isGasPlanet}/>
                     </div>
+
                 );
             })}
         </div>
