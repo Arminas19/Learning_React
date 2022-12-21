@@ -44,10 +44,9 @@
     justify-content: center;
   }
   
-
-  .task > button {
-    width: 25px;
-    height: 20px;
+  .button2 {
+    height: auto;
+    margin: 2px;
     margin-left: 20px;
     text-align: center;
   }
