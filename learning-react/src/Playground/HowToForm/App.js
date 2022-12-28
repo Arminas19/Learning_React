@@ -1,10 +1,12 @@
-import React from 'react';
 import './App.css';
+import {Form} from './Form';
 
 export default function App() {
   return (
     <div className='App'>
-        App
-    </div>
+      <h1>Form</h1>
+      <br/>
+      <Form/>
+      </div>
   );
-};
+}
