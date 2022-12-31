@@ -2,4 +2,4 @@
 2. create typeScript react application 
  - npx create-react-app (app_name) --temaplte typescript
 
-time: 5:06:07
+time: 5:29:33
