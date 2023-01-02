@@ -4,6 +4,7 @@ import './App.css';
 import { Main } from './pages/main';
 import { Login } from './pages/login';
 import { Nav } from './components/nav';
+import Posts from './pages/posts';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Main/>} />
             <Route path='/login' element={<Login/>} />
+            <Route path='/posts' element={<Posts/>} />
           </Routes>
         </BrowserRouter>
     </div>

@@ -14,7 +14,8 @@ export const Nav = () => {
             <nav className="nav">
                 <div className="links">
                     <Link to='/'> Home </Link>
-                    <Link to='/login'> Login </Link>
+                    { !user? (<Link to='/login'> Login </Link>): (
+                    <Link to='/posts'> Create Posts </Link>)}
                 </div>
                 <div className="user">
                     {user && (
