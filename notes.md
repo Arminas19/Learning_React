@@ -2,7 +2,6 @@
 2. create typeScript react application 
  - npx create-react-app (app_name) --temaplte typescript
 
-time: 6:46:09
+time: 7:05:14
 
-ToDo:
-rewatch + study part 2 of firebase project
+
