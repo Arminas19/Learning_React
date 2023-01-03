@@ -1,4 +1,4 @@
-import {getDocs, collection, doc} from 'firebase/firestore';
+import {getDocs, collection} from 'firebase/firestore';
 import {db} from '../../config/firebase';
 import { useEffect, useState } from 'react';
 import { Post } from './post';
@@ -21,7 +21,6 @@ export const Main = () => {
             ...doc.data(), id: doc.id
         })) as Post[])
     }
-    getPosts();
     useEffect(() => {
         getPosts();
     }, []);
